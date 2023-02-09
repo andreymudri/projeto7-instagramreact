@@ -213,6 +213,7 @@ body {
   position: sticky;
   top: 88px;
   width: 293px;
+  margin-left: 25px;
 }
 
 .sidebar > .usuario {
