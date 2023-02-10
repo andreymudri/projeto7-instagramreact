@@ -1,4 +1,5 @@
 import Post from "./Post"
+
 const posts =[
     {   
         username : "meowed",
