@@ -7,11 +7,11 @@ export default function Post(props) {
 function handleLike (){
     if (Heartion === "heart-outline") {
       setHeartion("heart") 
-      setLikeammount(Likeammount + 0.001)
+      setLikeammount(Likeammount + 1)
       
     } else {
       setHeartion("heart-outline")
-      setLikeammount(Likeammount - 0.001)
+      setLikeammount(Likeammount - 1)
       
     }
 }

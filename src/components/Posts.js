@@ -7,7 +7,7 @@ const posts =[
         likedby : "respondeai",
         postimg : "assets/img/gato-telefone.svg",
         likedbyimg : "assets/img/respondeai.svg",
-        likedammount : 101.523,   
+        likedammount : 101523,   
     },
     {   
         username : "barked",
@@ -15,7 +15,7 @@ const posts =[
         likedby : "adorable_animals",
         postimg : "assets/img/dog.svg",
         likedbyimg : "assets/img/adorable_animals.svg",
-        likedammount : 101.523,   
+        likedammount : 101523,   
     },
     {   
         username : "meowed",
@@ -23,7 +23,7 @@ const posts =[
         likedby : "respondeai",
         postimg : "assets/img/gato-telefone.svg",
         likedbyimg : "assets/img/respondeai.svg",
-        likedammount : 551.523,   
+        likedammount : 551523,   
     },
 ]
 
