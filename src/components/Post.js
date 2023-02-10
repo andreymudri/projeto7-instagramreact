@@ -40,7 +40,7 @@ return (
           </div>
     
           <div class="conteudo">
-            <img src={props.postimg} alt={props.postimg} data-test="post-image"/>
+            <img src={props.postimg} alt={props.postimg} onClick={handleLike} data-test="post-image"/>
           </div>
     
           <div class="fundo">
