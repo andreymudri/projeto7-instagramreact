@@ -9,12 +9,19 @@ function handleLike (){
       setHeartion("heart") 
       setLikeammount(Likeammount + 1)
       
+      
     } else {
       setHeartion("heart-outline")
       setLikeammount(Likeammount - 1)
       
     }
-}
+  }
+  function clickFoto() {
+    if (Heartion === "heart-outline") {
+      setHeartion("heart") 
+      setLikeammount(Likeammount + 1)      
+    }
+  }
 function handleSave(){
   if (Savedion === "bookmark-outline") {
     setSavedion("bookmark")
@@ -28,36 +35,36 @@ function handleSave(){
 
 return (
 
-    <div class="post" data-test="post">
-          <div class="topo">
-            <div class="usuario">
+    <div className="post" data-test="post">
+          <div className="topo">
+            <div className="usuario">
             <img src={props.userimg} alt={props.username} />
                 {props.username}
             </div>
-            <div class="acoes">
+            <div className="acoes">
               <ion-icon name="ellipsis-horizontal"></ion-icon>
             </div>
           </div>
     
-          <div class="conteudo">
-            <img src={props.postimg} alt={props.postimg} onClick={handleLike} data-test="post-image"/>
+          <div className="conteudo">
+            <img src={props.postimg} alt={props.postimg} onClick={clickFoto} data-test="post-image"/>
           </div>
     
-          <div class="fundo">
-            <div class="acoes">
+          <div className="fundo">
+            <div className="acoes">
               <div>
                 <ion-icon onClick={handleLike} name={Heartion} class={Heartion} data-test="like-post"></ion-icon>
                 <ion-icon name="chatbubble-outline"></ion-icon>
                 <ion-icon name="paper-plane-outline"></ion-icon>
               </div>
               <div>
-                <ion-icon onClick={handleSave} name={Savedion} class ={Savedion} data-test="save-post"></ion-icon>
+                <ion-icon onClick={handleSave} name={Savedion} className ={Savedion} data-test="save-post"></ion-icon>
               </div>
             </div>
     
-            <div class="curtidas">
+            <div className="curtidas">
               <img src={props.likedbyimg} alt={props.likedby}/>
-              <div class="texto">
+              <div className="texto">
                 Curtido por <strong>{props.likedby}</strong> e <strong data-test="likes-number">outras {Likeammount} pessoas</strong>
               </div>
             </div>

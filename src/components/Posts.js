@@ -18,7 +18,7 @@ const posts =[
         likedammount : 101523,   
     },
     {   
-        username : "meowed",
+        username : "meowed2",
         userimg : "assets/img/meowed.svg",
         likedby : "respondeai",
         postimg : "assets/img/gato-telefone.svg",
@@ -28,9 +28,9 @@ const posts =[
 ]
 
 export default function Posts(){
-    return(<div class="posts">
+    return(<div className="posts">
         {posts.map((prop) =>(
-            <Post
+            <Post   key={prop.username}
                     username={prop.username}
                     userimg={prop.userimg}
                     postimg={prop.postimg}

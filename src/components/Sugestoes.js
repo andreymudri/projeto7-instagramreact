@@ -8,16 +8,17 @@ export default function Sugestoes(){
     {name:"smallcutecats", imagem:"assets/img/smallcutecats.svg", follow:"Segue você"}]
 
 
-    return(   <div class="sugestoes">
-    <div class="titulo">
+    return(   <div className="sugestoes">
+    <div className="titulo">
       Sugestões para você
       <div>Ver tudo</div>
     </div>
      {sugestoes.map((prop)=>(
-          <Sugestao
-            username={prop.name}
-            imagem={prop.imagem}
-            follow={prop.follow}      
+         <Sugestao
+        key={prop.name}
+        username={prop.name}
+        imagem={prop.imagem}
+        follow={prop.follow}      
       />
 
      ))}
